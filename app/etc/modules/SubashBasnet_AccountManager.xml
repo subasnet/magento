@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * app/code/etc/modules/SubashBasnet_AccountManager.xml
+ *
+ * This is description
+ *
+ * NOTICE OF LICENSE
+ *
+ * @author      Subash Basnet
+ * @category    SubashBasnet
+ * @package     AccountManager
+ * @copyright   Copyright (c) 2017 
+ */
+-->
+<config>
+    <modules>
+        <SubashBasnet_AccountManager>
+            <active>true</active>
+            <codePool>local</codePool>
+        </SubashBasnet_AccountManager>
+    </modules>
+</config>

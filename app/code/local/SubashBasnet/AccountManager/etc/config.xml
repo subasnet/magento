@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * app/code/local/SubashBasnet/AccountManager/etc/config.xml
+ *
+ * This is description
+ *
+ * NOTICE OF LICENSE
+ *
+ * @author      Subash Basnet
+ * @category    SubashBasnet
+ * @package     AccountManager
+ * @copyright   Copyright (c) 2017 
+ */
+-->
+<config>
+    <modules>
+        <SubashBasnet_AccountManager>
+            <version>0.0.1</version>
+        </SubashBasnet_AccountManager>
+    </modules>
+    <global>
+        <models>
+            <accountmanager>
+                <class>SubashBasnet_AccountManager_Model</class>
+                <resourceModel>accountmanager_resource</resourceModel>
+            </accountmanager>
+            <accountmanager_resource>
+                <class>SubashBasnet_AccountManager_Model_Resource</class>
+                <entities>
+                        <manager>
+                            <table>accountmanager_manager</table>
+                        </manager>
+                        <manager_registrant>
+                            <table>accountmanager_manager_registrant</table>
+                        </manager_registrant>
+                </entities>
+            </accountmanager_resource>
+        </models>
+        <resources>
+            <accountmanager_setup>
+                <setup>
+                    <module>SubashBasnet_AccountManager</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+            </accountmanager_setup>
+        </resources>
+        <blocks>
+            <accountmanager>
+                <class>SubashBasnet_AccountManager_Block</class>
+            </accountmanager>
+        </blocks>
+        <helpers>
+            <accountmanager>
+                <class>SubashBasnet_AccountManager_Helper</class>
+            </accountmanager>
+        </helpers>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <accountmanager before="Mage_Adminhtml">SubashBasnet_AccountManager_Adminhtml</accountmanager>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

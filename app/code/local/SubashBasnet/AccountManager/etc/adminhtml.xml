@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * app/code/local/SubashBasnet/AccountManager/etc/config.xml
+ *
+ * This is description
+ *
+ * NOTICE OF LICENSE
+ *
+ * @author      Subash Basnet
+ * @category    SubashBasnet
+ * @package     AccountManager
+ * @copyright   Copyright (c) 2017 
+ */
+-->
+<config>
+    <menu>
+        <accountmanager translate="title" module="accountmanager">
+            <title>Account Manager</title>
+            <sort_order>1000</sort_order>
+            <action>adminhtml/manager</action>
+        </accountmanager>
+    </menu>
+</config>

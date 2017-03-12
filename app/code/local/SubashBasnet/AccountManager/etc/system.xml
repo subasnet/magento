@@ -1,0 +1,26 @@
+<config>
+    <sections>
+        <general translate="label">
+            <groups>
+                <accountmanager translate="lable">
+                    <label>Threshold at which orders get allocated to an account manager.</label>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <threshold_order_accountmanager translate="label">
+                            <label>Threshold at which orders get allocated to an account manager.</label>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Amount in £.</comment>
+                            <frontend_class>validate-digits</frontend_class>
+                        </threshold_order_accountmanager>
+                    </fields>
+                </accountmanager>
+            </groups>
+        </general>
+    </sections>
+</config>
